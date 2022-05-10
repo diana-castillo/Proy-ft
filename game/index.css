@@ -8,6 +8,7 @@ body{
     background: #f7f7f7;
     display: flex;
     align-items: center;
+    font-family: 'Open Sans';
 }
 
 .contenedor {

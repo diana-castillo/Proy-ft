@@ -212,6 +212,9 @@ function GanarPuntos() {
 function GameOver() {
     Estrellarse();
     gameOver.style.display = "block";
+    document.body.onkeyup = function() {
+        location.reload();
+    };
 }
 
 function DetectarColision() {

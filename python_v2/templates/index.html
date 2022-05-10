@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>{{option_a}} vs {{option_b}}!</title>
+    <title>{{option_a}} vs {{option_b}}! - V2</title>
     <base href="/index.html">
     <link rel="icon" href="{{ url_for('static',filename='img/icono.png') }}">
     <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
@@ -72,38 +72,52 @@
         $(".a").prop('disabled', true);
         $(".a").html('{{option_a}} <i class="fa fa-check-circle"></i>');
         $(".b").css('opacity','0.5');
-
-        /*swal("¡Hemos guardado tu voto!", {
-          buttons: ["Cerrar", "Jugar!"],
-        });*/
-
-        /*swal({
-          title: "Bien!",
-          text: "Adelante!",
-          type: "success"
-        }).then(function() {
-          window.location = "https://es.stackoverflow.com/";
-        });*/
         
-        swal({
-          title: "Are you sure?",
-          text: "You will not be able to recover this imaginary file!",
-          type: "warning",
-          showCancelButton: true,
-          confirmButtonColor: "#DD6B55",
-          cancelButtonColor: "#DD6B55",
-          confirmButtonText: "Yes, delete it!",
-          cancelButtonText: 'No, cancelar',
-          closeOnConfirm: false,
-          closeOnCancel: false
-      })
+        swal("¡Versión 2 ya disponible!", "¿Deseas probar las nuevas funcionalidades?", "info", {
+          buttons: {
+            cancelar: { text: "Cancelar"
+            },
+            agregar: {
+              text: "Jugar"
+            },
+          },
+        })
+        .then((value) => {
+          switch (value) {
+            case "cancelar":
+              break;
+            case "agregar":
+              window.location = "http://127.0.0.1:5500/";
+              break;
+          }
+        });
 
       }
       if(vote == "b"){
         $(".b").prop('disabled', true);
         $(".b").html('{{option_b}} <i class="fa fa-check-circle"></i>');
         $(".a").css('opacity','0.5');
+
+        swal("¡Versión 2 ya disponible!", "¿Deseas probar las nuevas funcionalidades?", "info", {
+          buttons: {
+            cancelar: { text: "Cancelar"
+            },
+            agregar: {
+              text: "Jugar"
+            },
+          },
+        })
+        .then((value) => {
+          switch (value) {
+            case "cancelar":
+              break;
+            case "agregar":
+              window.location = "http://127.0.0.1:5500/";
+              break;
+          }
+        });
       }
+      
     </script>
 
   </body>
