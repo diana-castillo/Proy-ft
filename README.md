@@ -1,6 +1,6 @@
 # Proyecto Tolerancia a fallas
 
-Aplicación web en la que se realiza una encuesta y una vez realizado el voto, se tiene la opción de poder jugar un minijuego.
+Aplicación web en la que se realiza una encuesta y una vez realizado el voto dependiendo de la versión en la que se haya votado se tendrá la opción de poder jugar un minijuego.
 
 ## Autores ✒️
 
@@ -70,8 +70,10 @@ _Herramientas y lenguajes utilizados para el desarrollo de todo el proyecto_
 * [PostreSQL](https://www.postgresql.org/ftp/pgadmin/pgadmin4/v6.8/windows/) - Base datos utilizada
 * [Flask](https://flask.palletsprojects.com/en/2.1.x/) - Micoframework para el desarrollo web
 * [Nodejs](https://nodejs.org/es/) - Entorno para la API del back-end
-* [Html](https://developer.mozilla.org/en-US/docs/Web/HTML) - Lenguaje para desarrollo web
+* [Html](https://developer.mozilla.org/en-US/docs/Web/HTML) y [Javascript](https://www.javascript.com/) - Lenguajes para desarrollo web
 
+## Arquitectura 🧭
 
+![Modelo proyecto, tolerante fallas drawio](https://user-images.githubusercontent.com/70995583/168410329-ffe68f6b-becd-46c2-b2d5-8e55b55c961b.png)
 
 
