@@ -12,20 +12,10 @@ Aplicación web en la que se realiza una encuesta y una vez realizado el voto de
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-Mira **Deployment** para conocer como desplegar el proyecto.
-
-
 ### Pre-requisitos 📋
 
-_Que cosas necesitas para instalar el software y como instalarlas_
-
-#### Docker
-
-```
-Da un ejemplo
-```
-
 #### OpenShift
+_Para poder desplegar la aplicación será necesario tener una cuenta en Red hat (o [crear una](https://sso.redhat.com/auth/realms/redhat-external/login-actions/registration?client_id=https%3A%2F%2Fwww.redhat.com%2Fwapps%2Fugc-oidc&tab_id=d4m5wQc_HtY) en caso de no tenerla) así como haber iniciado un [Developer Sandbox for Red Hat OpenShift](https://developers.redhat.com/developer-sandbox/get-started) y tener acceso al mismo_
 
 
 ### Instalación 🔧
@@ -67,10 +57,11 @@ _Agrega notas adicionales sobre como hacer deploy_
 
 _Herramientas y lenguajes utilizados para el desarrollo de todo el proyecto_
 
-* [PostreSQL](https://www.postgresql.org/ftp/pgadmin/pgadmin4/v6.8/windows/) - Base datos utilizada
-* [Flask](https://flask.palletsprojects.com/en/2.1.x/) - Micoframework para el desarrollo web
+* [PostreSQL](https://www.postgresql.org/ftp/pgadmin/pgadmin4/v6.8/windows/) - Base de datos utilizada
+* [Flask](https://flask.palletsprojects.com/en/2.1.x/) - Microframework para el desarrollo web
 * [Nodejs](https://nodejs.org/es/) - Entorno para la API del back-end
 * [Html](https://developer.mozilla.org/en-US/docs/Web/HTML) y [Javascript](https://www.javascript.com/) - Lenguajes para desarrollo web
+* [Openshift Sandbox](https://developers.redhat.com/developer-sandbox/get-started) - Ambiente para construcción de la aplicación
 
 ## Arquitectura 🧭
 
