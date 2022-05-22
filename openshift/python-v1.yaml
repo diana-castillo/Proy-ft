@@ -1,11 +1,8 @@
-apiVersion: operator.knative.dev/v1alpha1
+apiVersion: serving.knative.dev/v1
 kind: Service
 metadata:
   name: voting-app
 spec:
-  config:
-    autoscaler:
-      enable-scale-to-zero: "false"
   template:
     spec:
       containers:
