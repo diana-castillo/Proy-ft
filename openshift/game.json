@@ -234,7 +234,7 @@
         "displayName": "Git Repository URL",
         "description": "The URL of the repository with your application source code.",
         "required": true,
-        "value": "https://github.com/sclorg/httpd-ex.git"
+        "value": "https://github.com/diana-castillo/Proy-ft/tree/main/game"
       },
       {
         "name": "SOURCE_REPOSITORY_REF",
