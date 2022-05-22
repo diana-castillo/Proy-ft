@@ -16,8 +16,8 @@ app.get('/', function (req, res) {
   
   //Conexion DB
   const connectionData = {
-    user: 'postgres',
-    host: 'localhost',
+    user: 'Diana',
+    host: 'postgresql.diana2206-dev.svc.cluster.local',
     database: 'votingApp',
     password: '220600dfcr',
     port: 5432,
@@ -34,7 +34,7 @@ app.get('/', function (req, res) {
     else {
       var votes = collectVotesFromResult(result);
       //Modificar HTML
-      html = fs.readFileSync('index.html').toString()
+      html = fs.readFileSync(__dirname + '/index.html').toString()
       id_dom = new JSDOM(html)
 
       total = votes.a + votes.b;

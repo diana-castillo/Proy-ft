@@ -6,12 +6,14 @@ import logging
 import psycopg2
 
 
-conexion = psycopg2.connect(database="votingApp", user="postgres", password="220600dfcr")
+host = "postgresql.diana2206-dev.svc.cluster.local"
+conexion = psycopg2.connect(dbname="votingApp", user="Diana", password="220600dfcr", host=host)
 cursor1 = conexion.cursor()
 
+hostname = socket.gethostname()
 option_a = os.getenv('OPTION_A', "Cats")
 option_b = os.getenv('OPTION_B', "Dogs")
-hostname = socket.gethostname()
+
 
 app = Flask(__name__)
 
