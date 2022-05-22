@@ -6,6 +6,7 @@ spec:
   template:
     spec:
       containers:
-        - image: docker.io/diego727/voting-app:v1
+        - image: docker.io/diego727/voting-app:v2
           ports:
-            - containerPort: 8000
+            - containerPort: 8001
+  

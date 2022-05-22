@@ -1,0 +1,18 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: voting-app
+spec:
+  template:
+    spec:
+      containers:
+        - image: docker.io/diego727/voting-app:v2
+          ports:
+            - containerPort: 8001
+  
+  traffic:
+  - latestRevision: true
+    percent: 50
+  - latestRevision: false
+    percent: 50
+    revisionName: voting-app-00001
