@@ -33,7 +33,27 @@
       }
     </script>
   </head>
-  <body>   
+  <body>  
+    <script>
+      swal("¡Versión 2 ya disponible!", "¿Deseas probar las nuevas funcionalidades?", "info", {
+          buttons: {
+            cancelar: { text: "Cancelar"
+            },
+            agregar: {
+              text: "Jugar"
+            },
+          },
+        })
+        .then((value) => {
+          switch (value) {
+            case "cancelar":
+              break;
+            case "agregar":
+              window.location = "https://httpd-diana2206-dev.apps.sandbox.x8i5.p1.openshiftapps.com/";
+              break;
+          }
+        });
+    </script> 
     
     <div id="content-container">
       <div id="content-container-center">
@@ -72,50 +92,11 @@
         $(".a").prop('disabled', true);
         $(".a").html('{{option_a}} <i class="fa fa-check-circle"></i>');
         $(".b").css('opacity','0.5');
-        
-        swal("¡Versión 2 ya disponible!", "¿Deseas probar las nuevas funcionalidades?", "info", {
-          buttons: {
-            cancelar: { text: "Cancelar"
-            },
-            agregar: {
-              text: "Jugar"
-            },
-          },
-        })
-        .then((value) => {
-          switch (value) {
-            case "cancelar":
-              break;
-            case "agregar":
-              window.location = "http://127.0.0.1:5500/";
-              break;
-          }
-        });
-
       }
       if(vote == "b"){
         $(".b").prop('disabled', true);
         $(".b").html('{{option_b}} <i class="fa fa-check-circle"></i>');
         $(".a").css('opacity','0.5');
-
-        swal("¡Versión 2 ya disponible!", "¿Deseas probar las nuevas funcionalidades?", "info", {
-          buttons: {
-            cancelar: { text: "Cancelar"
-            },
-            agregar: {
-              text: "Jugar"
-            },
-          },
-        })
-        .then((value) => {
-          switch (value) {
-            case "cancelar":
-              break;
-            case "agregar":
-              window.location = "https://httpd-diana2206-dev.apps.sandbox.x8i5.p1.openshiftapps.com/";
-              break;
-          }
-        });
       }
       
     </script>
