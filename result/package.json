@@ -1,16 +1,17 @@
 {
   "name": "result",
   "version": "1.0.0",
-  "description": "App de resultado",
+  "description": "App para desplegar resultados de una votacion",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Diana Castillo",
+  "author": "Diego Garcia",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.8",
     "express": "^4.18.1",
-    "jsdom": "^19.0.0",
+    "path": "^0.12.7",
     "pg": "^8.7.3"
   }
 }
